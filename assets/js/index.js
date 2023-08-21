@@ -101,7 +101,8 @@ function mostrarResultado() {
   } else if (
     cantidadCuartos.value.trim() === "0" ||
     mDesde.value.trim() === "" ||
-    mHasta.value.trim() === "0"
+    mHasta.value.trim() === "0" || 
+    mDesde.value.trim()> mHasta.value.trim()
   ) {
     alert(" por favor revisa los datos para obtener una busqueda correcta ");
   } else {
